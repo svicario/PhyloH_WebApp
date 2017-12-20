@@ -59,7 +59,7 @@ Observations can be assigned to Sample and Group using geographic information in
 
 a) ![mode of grouping](img/GeoModes.png) 
 
-b) ![screenshot from GUI](img/Schermata 2016-12-28 alle 22.35.05.png)
+b) ![screenshot from GUI](img/Schermata2016-12-28alle22.35.05.png)
 
 Figure 3
  In the geographic modes all mandatory information can be included in the sample file, that in these mode is a comma separated value file. Headers are needed and follow darwin core terms (http://rs.tdwg.org/dwc/terms/). Figure 3a depict as a logic schema the choice, while the figure 3b show the actual GUI on the web application. In the first option the user is required to define the header to assign Sample to Group, while sample are defined by eventID or eventDate headers. In the second option, the user need to define if Major Habitat type or Biogeographic realm would define Group, while sample is defined by Major Habitat, all following Nature Conservancy classification (http://maps.tnc.org/gis_data.html). Finally last option require that user commit on a size of the cell grid in meters to perform under a EASE 2.0 projection the construction of hexagonal grid and assign observation to cell-id of the grid and use it both for Group and Sample definition.          
