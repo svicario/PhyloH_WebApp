@@ -10,6 +10,7 @@ M. Santoro, S. Vicario
 
 
 #Introduction#
+
 This document provides a step by step guide to use the Web GUI (Graphical User INterface) of the Phylo Web Processing Service. The GUI is available at
 
 
@@ -29,6 +30,7 @@ Figure 1
 ![info](img/Schermatadel2017-12-2014-24-31.png)
 Figure 2
 #Run in Normal mode#
+
 On page load, all input parameters are empty. Three file are required, while another is optional.   It is possible to run the model with default inputs. To do this, users click the “Run Default” button. The default inputs are the following:
 
 
@@ -62,6 +64,7 @@ b) ![screenshot from GUI](img/Schermata2016-12-28alle22.35.05.png)
 Figure 3
  In the geographic modes all mandatory information can be included in the sample file, that in these mode is a comma separated value file. Headers are needed and follow darwin core terms (http://rs.tdwg.org/dwc/terms/). Figure 3a depict as a logic schema the choice, while the figure 3b show the actual GUI on the web application. In the first option the user is required to define the header to assign Sample to Group, while sample are defined by eventID or eventDate headers. In the second option, the user need to define if Major Habitat type or Biogeographic realm would define Group, while sample is defined by Major Habitat, all following Nature Conservancy classification (http://maps.tnc.org/gis_data.html). Finally last option require that user commit on a size of the cell grid in meters to perform under a EASE 2.0 projection the construction of hexagonal grid and assign observation to cell-id of the grid and use it both for Group and Sample definition.          
 #Secondary Parameters#
+
 All mode of analysis require the evaluation of 4 secondary parameters: 
 1. Number of permutation. The significance of Beta diversity is evaluated with a permutation procedure of taxon label across Sample and Group. The significance is evaluated on overall count and for the contribution of each lineage and each environment in the Group variable. In this last two case a boolean vector indicates if the value is significant at 0.05 using a sequential Bonferroni procedure.
 2. maximum time of waiting. The backend platform allow for 24 hour calculation at maximum, but the frontend GUI will check for no more than the time requested by the user. After this time the user can manually check when the result URL will be accessible.
@@ -89,7 +92,9 @@ Figure 3
 
 
 #Description of Outputs#  
+
 ##The HTML report##
+
 A main result file is available: an html report, in which all statistics are reported in tables and the contribution on lineage is drawn on a dynamic tree representation. 
 On the top of the report an index allows to move across the different sections
 Tree representation
@@ -98,6 +103,7 @@ Stacked histogram on each tip show observed counts, circle of growing size and d
 
 
 ##Geographic output##
+
 In case of geographic mode a second main output is present: a shapefile. The file report the contribution of the sample and groups to beta diversity and relative p-value and significance in a geographically explicit context.  Shapefile is the most common standard of interchange for geographic information and user can visualize with several opensource and non software. We report how to visualize it with the opensource software Qgis (http://qgis.org/en/site/).
 1. Drag the file with extension shp onto Qgis 
 2. Select the loaded layer from Legend list, and select property.
