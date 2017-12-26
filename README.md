@@ -16,7 +16,7 @@ Model Description
 The left side navigation panel provides the list of available models, presently only Phylo model is available (Fig. 1).
 
 
-![empty](Schermata2017-12-26alle12.04.57.png)
+![empty](img/Schermata2017-12-26alle12.04.57.png)
 Figure 1
 
 
