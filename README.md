@@ -1,7 +1,4 @@
 # PhyloH_WebApp
-Describe and queue bug report
-
-
 
 ﻿Phylo WPS Client - Step by Step Tutorial
 
@@ -11,11 +8,8 @@ M. Santoro, S. Vicario
 
 # Introduction
 
-This document provides a step by step guide to use the Web GUI (Graphical User INterface) of the Phylo Web Processing Service. The GUI is available at
-
-
-http://testwps.geodab.eu/wps/testUI/
-
+This document provides a step by step guide to use the [Web GUI (Graphical User Interface)](http://ecovrp.geodab.eu/wps/testUI/) of the [Phylo Web Processing Service] (http://testwps.geodab.eu/wps/services/http-get?service=WPS&request=GetCapabilities) that follow [OGC standard](http://www.opengeospatial.org/standards/wps) . The Phylo Web Processing Service deploy directly the [phyloH script](https://github.com/svicario/phyloH) 
+Problem or bug in the use of the Web GUI can be reported in the issue tracker of this github repository.
 
 The GUI was tested using the following browsers: Google Chrome, Microsoft Edge, Safari.
 Model Description
@@ -29,9 +23,16 @@ Figure 1
  It is possible to view the model description by clicking the “More Info” button at the left the model title. A description of the model is displayed along with a link to Git Hub repository of the python script executed to run the actual computation (Fig. 2)
 ![info](img/Schermatadel2017-12-2014-24-31.png)
 Figure 2
+# Uploading files to the service
+Files to be uploaded need to be exposed on a direct pubblic link, for reason of security and simplicity. Google drive's, Dropbox's or Owncloud's are not direct link. however is possible to access Dropbox API direct link with a simple modification of the shareable link. The URI domain need to be modified from "https://www.dropbox.com/" to "https://dl.dropboxusercontent.com/", while at the end all characters from "?" and after need to be erased. An example of such transformation is:   
+from:  
+https://www.dropbox.com/s/w89632by0c7zkmf/SpeciesGRoot.tree?dl=0  
+to:  
+https://dl.dropboxusercontent.com/s/w89632by0c7zkmf/SpeciesGRoot.tree
+
 # Run in Normal mode
 
-On page load, all input parameters are empty. Three file are required, while another is optional.   It is possible to run the model with default inputs. To do this, users click the “Run Default” button. The default inputs are the following:
+On page load, all input parameters are empty. Three file are required, while another is optional. It is possible to run the model with default inputs. To do this, users click the “Run Default” button. The default inputs are the following:
 
 
 * Sample file: 
