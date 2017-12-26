@@ -16,12 +16,12 @@ Model Description
 The left side navigation panel provides the list of available models, presently only Phylo model is available (Fig. 1).
 
 
-![empty](img/Schermatadel2017-12-2014-23-18.png)
+![empty](Schermata2017-12-26alle12.04.57.png)
 Figure 1
 
 
  It is possible to view the model description by clicking the “More Info” button at the left the model title. A description of the model is displayed along with a link to Git Hub repository of the python script executed to run the actual computation (Fig. 2)
-![info](img/Schermatadel2017-12-2014-24-31.png)
+![info](img/Schermata2017-12-26alle12.05.43.png)
 Figure 2
 # Uploading files to the service
 Files to be uploaded need to be exposed on a direct pubblic link, for reason of security and simplicity. Google drive's, Dropbox's or Owncloud's are not direct link. however is possible to access Dropbox API direct link with a simple modification of the shareable link. The URI domain need to be modified from "https://www.dropbox.com/" to "https://dl.dropboxusercontent.com/", while at the end all characters from "?" and after need to be erased. An example of such transformation is:   
