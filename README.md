@@ -127,3 +127,10 @@ To mask non significant cell use the following procedure on QGis
    ![qgis](img/iscreen0.png)
 6. Select all value that are not False  and eliminate them with the eliminate buttom, then press “ok”
    ![qgis](img/screen1.png)
+
+# Example output
+1. [random survery example](http://cloud.recas.ba.infn.it:8080/v1/AUTH_fb6d6fcd0e194a96bb6d0420dce8332f/9b5f444e-6c4c-4649-ab8b-3ff4980bc64e/9b5f444e-6c4c-4649-ab8b-3ff4980bc64e.tgz)
+This data set collect data from citizen scientist and different zoologist on the butterfly of danmark. Open the Html and to explore the tree load into it the file .mibranch and .TreeLabelled.
+The data set is well balanced across the hexagonal cells, as is possible to check in the section "Entropy across samples, groups and samples within groups" of the report (diversity equivalent to 12.5 hexagon with same counts versus 18 hexagon really present). Mutual information ("Beta diversity") between Tree and Group is significant but low (less 3% of linneage of  overal community is differently distributed), but this small difference is  concentrated in few hexagons as is possible to see in the section "Difference of each group from total", where N21, N42, N46 have difference larger 2-3 times the other ones. Looking at the tree representation and the table underneath  Thymelicus_sylvestris, Pararge_aegeria and Hipparchia_semele are the 3 most umbalanced species, while Lycaenidae is the group as overall more umbalanced. Opening the shapefile with Qgis and following the indication to add gradient color  and overalay a world map is possible to see that all hexagons more divergent ( highier beta diversity) are costal if not insular (H21 and H46).
+
+ 
